@@ -60,6 +60,8 @@ time.sleep(2)
 i = 1
 
 while i < 8:
+    
+    print(i)
  
     #åpner chrome og gitt webadresse
     web = webdriver.Chrome('C:\ChromeDrivers\chromedriver.exe')
