@@ -36,7 +36,7 @@ time.sleep(1)
 #skal legge inn selve regnr i tekstboks, men FEILER her. Antagelig pga pop-up
 regnr = "VJ21556"
 reg = web.find_element_by_xpath('//*[@id="id_regno"]')
-passW.send_keys(passWord)
+reg.send_keys(regnr)
 
 #websiden far tid til a laste
 time.sleep(1)
