@@ -47,6 +47,7 @@ leggtilreg = web.find_element_by_xpath('//*[@id="529923addguest"]/div/div/div[2]
 leggtilreg.click()
 
 time.sleep(2)
+#venter i 23t 59min for ny parkering legges inn, og eldste slettes
 #time.sleep(86340)
 
 
@@ -54,7 +55,7 @@ time.sleep(2)
 #dette gjentas i inntil 7 dogn
 i = 1
 
-while i < 7:
+while i < 8:
  
     #åpner chrome og gitt webadresse
     web = webdriver.Chrome('C:\ChromeDrivers\chromedriver.exe')
@@ -114,4 +115,3 @@ while i < 7:
         
     i += 1
     
-
