@@ -47,6 +47,10 @@ leggtilreg = web.find_element_by_xpath('//*[@id="529923addguest"]/div/div/div[2]
 leggtilreg.click()
 
 time.sleep(2)
+
+web.close()
+
+time.sleep(2)
 #venter i 23t 59min for ny parkering legges inn, og eldste slettes
 #time.sleep(86340)
 
@@ -109,6 +113,10 @@ while i < 8:
         
     avsluttkjt = web.find_element_by_xpath('//*[@id="529923deleteguest"]/div/div/div[2]/li/div/div[3]/a')
     avsluttkjt.click()
+    
+    time.sleep(2)
+
+    web.close()
     
     time.sleep(2)
     #time.sleep(86340)
