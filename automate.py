@@ -6,7 +6,7 @@ import time
 web = webdriver.Chrome('C:\ChromeDrivers\chromedriver.exe')
 web.get('https://smartoblat.trondheimparkering.no/accounts/login/?next=/')
 
-#wenbsiden far tid til a laste
+#websiden far tid til a laste
 time.sleep(2)
 
 #legger inn epost som brukernavnt i korrekt tekstboks
@@ -23,14 +23,14 @@ passW.send_keys(passWord)
 submit = web.find_element_by_xpath('/html/body/div/div[2]/div/form/div[3]/div[1]/button')
 submit.click()
 
-#wenbsiden far tid til a laste
+#websiden far tid til a laste
 time.sleep(1)
 
 #trykker på legg til nytt regnr
 leggtil = web.find_element_by_xpath('//*[@id="userPermitAccordion"]/div/div[2]/div[3]/div[1]/button')
 leggtil.click()
 
-#wenbsiden far tid til a laste
+#websiden far tid til a laste
 time.sleep(1)
 
 #skal legge inn selve regnr i tekstboks, men FEILER her. Antagelig pga pop-up
@@ -38,7 +38,7 @@ regnr = "VJ21556"
 reg = web.find_element_by_xpath('//*[@id="id_regno"]')
 passW.send_keys(passWord)
 
-#wenbsiden far tid til a laste
+#websiden far tid til a laste
 time.sleep(1)
 
 #submitter regnr fra kodesnutt over
